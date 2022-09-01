@@ -1,0 +1,169 @@
+:root{
+    --saturated-red:#db0007e3;
+    --pure-yellow:#ECE333DB;
+    --light-yellow:#fffbb3;
+    --dark-green:#005100;
+    --pale-white:#D3D3D3;
+}
+
+@font-face {
+    font-family: OPTIScript-Light;
+    src: url(/fonts/ScriptOpti-Light.otf);
+}
+@font-face{
+    font-family: Polly Rounded;
+    src: url(/fonts/PollyRounded-Bold.otf);
+}
+
+@font-face {
+    font-family:Alumatica-Regular;
+    src: url(/fonts/Alumatica-Regular.ttf);
+    font-weight: 900;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+header .red-bg{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:baseline;
+    padding-bottom:0.25rem;
+}
+header h1{
+    font-family: OPTIScript-Light;
+    font-weight: lighter;
+    font-size: 1.525rem;
+}
+
+header p{
+    font-family: Polly Rounded;
+    font-weight: 500;
+    color: var(--dark-green);
+    font-size: 0.925rem;
+    text-align: center;
+    padding-top:0.35rem;
+    padding-bottom: 1.75rem;
+}
+
+.red{
+    color: var(--saturated-red);
+}
+
+.yellow{
+    color:var(--pure-yellow);
+}
+.red-bg{
+    background-color: var(--saturated-red);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap:0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+main:first-child{
+    grid-column: 1;    
+}
+
+fieldset{
+    border-color: var(--dark-green);
+    border-width: 5px;
+    border-radius: 2rem;
+    padding: 0.2rem;
+}
+
+fieldset div, legend{
+    font-weight: bolder;
+    font-size:1.85rem ;
+}
+
+fieldset:nth-child(n){
+    font-size: .6rem;
+    text-align: center;
+    padding:0.25rem 0;
+}
+
+legend{
+    width:auto;
+    margin:0 auto;
+    border-radius: 1rem;
+}
+
+.box {
+    margin:0 auto;
+    margin-top:1rem;
+    margin-bottom: 1.75rem;
+    width:60%;
+    text-align: center; 
+}
+
+.logo-description{
+    color:var(--pale-white);
+    width:90%;
+    font-weight: 500;
+    text-align: center;
+    margin:0.5rem auto;
+}
+.pale-yellow-bg{
+    background-color: var(--light-yellow);
+    padding-top:0.25rem;
+    padding-bottom: 1rem;
+}
+
+.company-description{
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.8rem;
+    margin: 0.5rem auto;
+}
+
+.images{
+    position: relative;
+}
+.images *{
+    border:solid var(--dark-green) 3px;
+    border-radius: 0.5rem;
+    transform: translate(-50%,-50%);
+}
+.images .image-1{
+    position: absolute;
+    left:4.5rem;
+    top:5.5rem;
+}
+.images .image-2{
+    position: absolute;
+    top:11.5rem;
+    left:11.5rem;
+}
+
+.images .image-3{
+    position:absolute;
+    top:19.75rem;
+    left:5.5rem;
+}
+.images .image-4{
+    position: absolute;
+    top:25.75rem;
+    left:11.5rem;
+}
+
+.images .image-5{
+    position: absolute;
+    top:34rem;
+    left:7rem;
+}
+footer .red-bg{
+    height: 1rem;
+    width: 100%;
+}
